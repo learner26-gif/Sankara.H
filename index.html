@@ -275,7 +275,7 @@
  <div id="incomeModal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="model-title">Add Income</h2>
+            <h2 class="modal-title">Add Income</h2>
             <button class="close-btn" onclick="closeModal('incomeModal')">&times;</button>
         </div>
         <div class="modal-body">
@@ -288,6 +288,7 @@
                 <div class="form-group">
                     <label class="form-label">Category</label>
                     <select class="form-select" id="incomeCategory" required>
+                        <option value=""> Select Category</option>
                         <option value="salary">Salary</option>
                         <option value="freelance">Freelance</option>
                         <option value="business">Business</option>
@@ -310,7 +311,7 @@
         </div>
         <div class="modal-footer">
             <button class="btn btn-secondary" onclick="closeModal('incomeModal')">Cancel</button>
-                     <button class="btn btn-primary" onclick="addIncome()">Add Income</button>
+            <button class="btn btn-primary" onclick="addIncome()">Add Income</button>
         </div>
     </div>
   </div>
@@ -318,7 +319,7 @@
   <div id="expenseModal" class="modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="model-title">Add Income</h2>
+            <h2 class="model-title">Add Expense</h2>
             <button class="close-btn" onclick="closeModal('expenseModal')">&times;</button>
         </div>
         <div class="modal-body">
@@ -331,11 +332,12 @@
                 <div class="form-group">
                     <label class="form-label">Category</label>
                     <select class="form-select" id="expenseCategory" required>
+                        <option value="">Select Category</option>
                         <option value="food">Food</option>
                         <option value="entertainment">Entertainment</option>
                         <option value="shopping">Shopping</option>
                         <option value="transport">Transport</option>
-                                 <option value="utilities">Utilities</option>
+                        <option value="utilities">Utilities</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
@@ -354,7 +356,7 @@
         </div>
         <div class="modal-footer">
             <button class="btn btn-secondary" onclick="closeModal('expenseModal')">Cancel</button>
-                     <button class="btn btn-primary" onclick="addExpense()">Add Expense</button>
+            <button class="btn btn-primary" onclick="addExpense()">Add Expense</button>
         </div>
     </div>
   </div>
